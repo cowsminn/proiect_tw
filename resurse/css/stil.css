@@ -1,0 +1,16 @@
+/*variabila css*/
+
+body{
+    --culoare1:#F097E1;
+    --spatiere:100px;
+    padding-left: var(--spatiere); /*in toate directiile*/
+    padding-right: var(--spatiere) ;
+}
+
+p{
+    color:var(--culoare1);
+}
+
+h2{
+    border:2px solid var(--culoare1);
+}
