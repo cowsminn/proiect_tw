@@ -1,0 +1,96 @@
+html {
+    font-size: 18px;
+}
+
+#grid-pagina {
+    display: grid;
+    /*gap: 10px;*/
+    grid-template-columns: repeat(3, 1fr); /*1fr 1fr 1fr*/
+    grid-template-areas: "welcome welcome welcome"
+                         "promotii promotii orar"
+                         "fig1 produse produse" /*se ia alias adica ce in grid area*/
+                         "fig2 produse produse"
+                         "fig3 produse produse"
+                         "anunturi anunturi anunturi"
+                         "index-intrebari index-intrebari index-intrebari";
+}
+
+/*.taburi-iframe{*/
+/*    font-size: 1em;*/
+/*}*/
+#grid-pagina > * {
+    outline: 2px solid skyblue;
+    padding: 1em; /*1em inseamna dimensiunea textului*/
+}
+
+#grid-pagina > figure {
+    margin: 0;
+}
+
+#welcome {
+    grid-area: welcome;
+}
+
+#promotii {
+    grid-area: promotii;
+}
+
+#anunturi {
+    grid-area: anunturi;
+}
+
+#orar {
+    grid-area: orar;
+}
+
+#fig1 {
+    grid-area: fig1;
+}
+
+#fig2 {
+    grid-area: fig2;
+}
+
+#fig3 {
+    grid-area: fig3;
+}
+
+#produse {
+    grid-area: produse;
+}
+
+#index-intrebari {
+    grid-area: index-intrebari;
+}
+
+@media screen and (max-width: 1200px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    #grid-pagina {
+        grid-template-columns: repeat(2, 1fr); /*1fr 1fr 1fr*/
+        grid-template-areas: "welcome welcome"
+                         "promotii promotii "
+                         "orar orar"
+                         "fig1 produse" /*se ia alias adica ce in grid area*/
+                         "fig2 produse"
+                         "fig3 produse"
+                         "anunturi anunturi"
+                         "index-intrebari index-intrebari";
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    #grid-pagina {
+        display: block; /* se afiseaza una sub alta */
+    }
+}
+

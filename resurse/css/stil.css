@@ -1,9 +1,9 @@
 /*variabila css*/
 
 body{
-    --culoare1:#F097E1;
+    --culoare1: #97f0e6;
     --spatiere:100px;
-    padding-left: var(--spatiere); /*in toate directiile*/
+    padding-left: var(--spatiere); /*padding - in toate directiile*/
     padding-right: var(--spatiere) ;
 }
 
